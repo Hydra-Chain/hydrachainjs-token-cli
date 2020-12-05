@@ -4,11 +4,11 @@ const parseArgs = require("minimist")
 
 const {
   Hydra,
-} = require("hydrajs")
+} = require("hydrachainjs")
 
 const repoData = require("./solar.json")
-const hydra = new Hydra("http://hydra:test@localhost:13389", repoData)
-const myToken = hydra.contract("zeppelin-solidity/contracts/token/CappedToken.sol")
+const hydra = new Hydra("http://user:password@localhost:3389", repoData)
+const myToken = hydra.contract("lcstoken")
 
 async function totalSupply() {
   const result = await myToken.call("totalSupply")
