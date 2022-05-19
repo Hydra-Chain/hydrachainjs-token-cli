@@ -1,4 +1,4 @@
-# A NodeJS CLI Tool For ERC20 Token
+# A NodeJS CLI Tool For HRC20 Token
 
 Install dependencies
 
